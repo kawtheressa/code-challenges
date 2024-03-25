@@ -1,3 +1,66 @@
+=begin
+# Tech challenge - Robot
+
+The challenge is to write a command line interface to control a robot on a 2-dimensional plain.
+
+The robot should accept the following commands:
+
+M - Move robot forward
+
+L - Turn robot left
+
+R - Turn robot right
+
+? - Show available commands
+
+Q - Exit the robot console
+
+After each command, the console should print out the robot’s current status to the console, for example: `Robot at position [1,3] facing West`
+
+---
+
+Output 
+
+$ ruby robot_cli.rb
+
+Robot coming online.
+Available commands:
+M - Move robot forward
+L - Turn robot left
+R - Turn robot right
+? - Show available commands
+Q - Exit the robot console
+
+> M
+Robot at [0,1] facing North
+R
+Robot at [0,1] facing East
+M
+Robot at [1,1] facing East
+L
+Robot at [1,1] facing North
+M
+Robot at [1,2] facing North
+L
+Robot at [1,2] facing West
+M
+Robot at [0,2] facing West
+M
+Robot at [-1,2] facing West
+?
+Available commands:
+M - Move robot forward
+L - Turn robot left
+R - Turn robot right
+? - Show available commands
+Q - Exit the robot console
+> 
+
+> Q
+Robot going offline
+>
+=end
+
 class Robot
   def initialize
     @x = 0
